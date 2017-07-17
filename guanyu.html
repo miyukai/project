@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/fangte.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+	</head>
+	<body>
+		<!--首部导航栏-->
+		<header>
+			<div class="header_t">
+				<span>深圳华强方特文化科技集团股份有限公司&nbsp;&nbsp;&nbsp;
+					<a href="#">中文</a>&nbsp;|&nbsp;
+					<a href="#">ENGLISH</a>&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="header_b">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="html/lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="html/serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="html/zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="html/fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="html/gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="h_logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+		<div class="ban">
+			<img src="img/bg_aboutus_1.png"/>
+			<img src="img/bg_aboutus_2.png"/>
+		</div>
+		<div class="nav_1">
+			<div>
+				<a href="#/qiye" class="no">企业概览</a>
+				<a href="#/hexin">核心理念</a>
+				<a href="#/sixiang">思想体系</a>
+				<a href="#/pinpai">品牌故事</a>
+				<a href="#/rongyu">企业荣誉</a>
+				<a href="#/quanguo">全国布局</a>
+				<a href="#/lianxi">联系我们</a>
+			</div>
+		</div>
+		
+		<!--显示内容-->
+		<div ng-view></div>
+		
+		<!--底部栏-->
+		<div class="foot">
+				<div class="foot_top">
+					<div class="foot_top1280">
+						<a href="#"><img src="img/logo_bottom.png"/></a>
+						<div class="foot_top1280_main">
+							深圳市南山区科研路16号15楼
+							<br />
+							86-755-6682 6666
+							<br />
+							股票代码：834793
+						</div>
+						<div class="foot_top1280_tu">
+							<a href="#"><img src="img/weixin_huaqiang.jpg"/></a>
+							<a href="#"><img src="img/weixin_leyou.jpg"/></a>
+							<a href="#"><img src="img/weixin_xiongchumo.jpg"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="foot_bottom">
+					<div class="foot_bottom_left">
+						<div>
+							<a href="#">关于华强方特</a><span>|</span>
+							<a href="#">联系我们</a><span>|</span>
+							<a href="#">主营业务</a><span>|</span>
+							<a href="#">华强方特热讯</a><span>|</span>
+							<a href="#">方特旅游</a><span>|</span>
+							<a href="#">方特动漫</a><span>|</span>
+							<a href="#">网站地图</a>
+						</div>				
+						<p>版权所有：华强方特（深圳）智能技术有限公司 © 2005-2030 All rights reserved</p>
+						<p>《增值电信业务经营许可证》 许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7</p>
+					</div>
+					<div class="foot_bottom_right">
+						<a href="#"><img src="img/gameRFID.png"/></a>
+						<a href="#"><img src="img/police00.gif"/></a>
+						<a href="#"><img src="img/police0.gif"/></a>
+						<a href="#"><img src="img/gswj.png"/></a>
+					</div>
+				</div>
+		</div>
+	</body>
+	<!--分别引入插件jQuery angular -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<!--引入自己的插件-->
+	<script src="js/fangte.js"></script>
+	<script src="js/ly.js"></script>
+	<script src="js/qiye.js"></script>
+</html>

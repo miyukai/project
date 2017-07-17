@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/theme.css">
+    <style></style>
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <div class="header_t">
+				<span>深圳华强方特文化科技集团股份有限公司
+					<a href="#">中文</a>|
+					<a href="#">ENGLISH</a>
+				</span>
+    </div>
+    <div class="header_b">
+        <ul>
+					<li>
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="../guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="../rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="../rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="../zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="../tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="../linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+    </div>
+    <div class="h_logo">
+        <img src="../img/logo.png"/>
+    </div>
+</header>
+
+<section>
+    <div class="banner">
+        <div class="banner_box"></div>
+    </div>
+
+    <div class="seek">
+        <span>首页 &gt;文化产品内容及服务</span>
+        <span><input type="text"><input type="button"></span>
+    </div>
+
+    <div class="nav">
+        <div class="nav_left">
+            <p>文化内容产品及服务</p>
+            <ul>
+                <li>
+                    <em></em>
+                    <span><a href="move.html">特种电影</a></span>
+                </li>
+                <li>
+                    <em></em>
+                    <span><a href="anime.html">动漫产品</a></span>
+                    <ul class="nav2">
+                        <li>《熊出没》系列</li>
+                        <li>《小鸡不好惹》系列</li>
+                        <li>《生肖传奇》系列</li>
+                        <li>《小虫虫有大智慧》系列</li>
+                        <li>动漫品牌发行</li>
+                        <li>动漫品牌授权</li>
+                    </ul>
+                </li>
+                <li class="nav_active">
+                    <em></em>
+                    <span><a href="theme.html">主题演艺</a></span>
+                </li>
+                <li>
+                    <em></em>
+                    <span><a href="culture.html">文化衍生品</a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <p>主题演艺</p>
+            <div id="nav_txt">
+                <span>{{txt}}</span>
+            </div>
+        </div>
+        <div class="clean"></div>
+    </div>
+
+    <div class="lb">
+        <div class="lb_top">
+            <ul id="lb_ul">
+                <li>
+                    <div class="lb_img">
+                        <img src="../img/theme1.jpg" alt="">
+                    </div>
+                    <div class="lb_txt1">
+                        <span>神话</span>
+                        <em>The Show of Nüwa</em>
+                    </div>
+                    <div class="lb_color"></div>
+                    <div class="lb_txt2">
+                        <span>神话</span>
+                        <em>The Show of Nüwa</em>
+                        <p>一场大型史诗舞台剧</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lb_img">
+                        <img src="../img/theme2.jpg" alt="">
+                    </div>
+                    <div class="lb_txt1">
+                        <span>梁祝</span>
+                        <em>Butterfly Lovers</em>
+                    </div>
+                    <div class="lb_color"></div>
+                    <div class="lb_txt2">
+                        <span>神话</span>
+                        <em>Butterfly Lovers</em>
+                        <p>当今世界最大的供多人参与的裸眼AR表演项目</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lb_img">
+                        <img src="../img/theme3.jpg" alt="">
+                    </div>
+                    <div class="lb_txt1">
+                        <span>神话</span>
+                        <em>The Show of Nüwa</em>
+                    </div>
+                    <div class="lb_color"></div>
+                    <div class="lb_txt2">
+                        <span>丛林的故事</span>
+                        <em>Tales From The Jungle</em>
+                        <p>一场现代科技的大型奇幻歌舞剧</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lb_img">
+                        <img src="../img/theme4.jpg" alt="">
+                    </div>
+                    <div class="lb_txt1">
+                        <span>猴王</span>
+                        <em>Monkey  King</em>
+                    </div>
+                    <div class="lb_color"></div>
+                    <div class="lb_txt2">
+                        <span>猴王</span>
+                        <em>Monkey  King</em>
+                        <p>大型原创舞台剧</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lb_img">
+                        <img src="../img/theme5.jpg" alt="">
+                    </div>
+                    <div class="lb_txt1">
+                        <span>飞翔之歌</span>
+                        <em>Bubble Ballet</em>
+                    </div>
+                    <div class="lb_color"></div>
+                    <div class="lb_txt2">
+                        <span>飞翔之歌</span>
+                        <em>Bubble Ballet</em>
+                        <p>大型原创魔术秀</p>
+                    </div>
+                </li>
+            </ul>
+            <span href="#" id="lb_left"></span>
+            <span href="#" id="lb_right"></span>
+        </div>
+        <div class="lb_bottom">
+            <ul id="lb_bottom_ul">
+                <li>
+                    <img src="../img/theme6.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../img/theme7.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../img/theme8.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../img/theme9.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../img/theme10.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="foot">
+        <div class="foot_top">
+            <div class="foot_top1280">
+                <a href="#"><img src="../img/logo2.png"/></a>
+                <div class="foot_top1280_main">
+                    深圳市南山区科研路16号15楼
+                    <br/>
+                    86-755-6682 6666
+                    <br/>
+                    股票代码：834793
+                </div>
+                <div class="foot_top1280_tu">
+                    <a href="#"><img src="../img/erweima3.jpg"/></a>
+                    <a href="#"><img src="../img/erweima4.jpg"/></a>
+                    <a href="#"><img src="../img/erweima5.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <div class="foot_bottom_box">
+                <div class="foot_bottom_left">
+                    <div>
+                        <a href="#">关于华强方特</a><span>|</span>
+                        <a href="#">联系我们</a><span>|</span>
+                        <a href="#">主营业务</a><span>|</span>
+                        <a href="#">华强方特热讯</a><span>|</span>
+                        <a href="#">方特旅游</a><span>|</span>
+                        <a href="#">方特动漫</a><span>|</span>
+                        <a href="#">网站地图</a>
+                    </div>
+
+                    <p>版权所有：华强方特（深圳）智能技术有限公司 © 2005-2030 All rights reserved</p>
+                    <p>《增值电信业务经营许可证》 许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7</p>
+                </div>
+                <div class="foot_bottom_right">
+                    <a href="#"><img src="../img/footer1.png"/></a>
+                    <a href="#"><img src="../img/footer2.gif"/></a>
+                    <a href="#"><img src="../img/footer3.gif"/></a>
+                    <a href="#"><img src="../img/footer4.png"/></a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+<script src="../js/angular.min.js"></script>
+<script src="../js/jquery.js"></script>
+<script>
+    var a = 300+"px";//设置进入第二个页面的导航栏进度
+
+    //设置导航栏hover效果显示
+    $(".header_b>ul>li").hover(function(){
+        var ind = $(this).index()*150+"px";
+        $(this).parent().css({"background-position-x":ind})
+    },function(){
+        $(this).parent().css({"background-position-x":a})
+    })
+
+    //设置导航栏点击后的效果以及它的显示位置
+    $(".header_b>ul>li").click(function(){
+        a = $(this).index()*150+"px";
+        $(this).parent().css({"background-position-x":a})
+    })
+
+    var index = 0
+
+    //    轮播
+    $("#lb_right").click(function () {
+        index++;
+        var maxIndex = $("#lb_ul li").length % 4
+        var width = $("#lb_ul li")[0].offsetWidth + 45;
+        if (index > maxIndex) {
+            $("#lb_ul").css("transform", "transLateX(-" + width * 1 + "px)");
+            index = 1;
+        } else {
+            $("#lb_ul").css("transform", "transLateX(-" + width * index + "px)")
+        }
+        console.log(index)
+
+    })
+    $("#lb_left").click(function () {
+        var width = $("#lb_ul li")[0].offsetWidth + 40;
+        index--;
+        if (index < 0) {
+            $("#lb_ul").css("transform", "transLateX(0px)")
+            index = 0;
+        } else {
+            $("#lb_ul").css("transform", "transLateX(-" + width * index + "px)")
+        }
+        console.log(index)
+
+    })
+    
+    $("#lb_ul li").hover(function () {
+       var index1=$(this).index()
+        $("#lb_bottom_ul li").css({
+            "display":"none",
+        })
+        $("#lb_bottom_ul li").eq(index1).css({
+            "transition":"1s",
+            "display":"block",
+        })
+
+    })
+
+     var app = angular.module("app", [])
+         app.controller("myCtrl", function ($scope, $http) {
+             $scope.txt = null;
+             $http.get("../data/lose.json").success(function (data) {
+                 $scope.txt = data.theme.txt;
+                 console.log($scope.txt);
+             })
+         })
+</script>
+</body>
+</html>

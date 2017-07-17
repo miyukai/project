@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<title>招标信息</title>
+		<link rel="stylesheet" href="css/caigou.css"/>
+	</head>
+	<body ng-controller="myCtrl">
+		<header>
+			<div class="header_top">
+				<span>深圳华强方特文化科技集团股份有限公司&nbsp;&nbsp;&nbsp;
+					<a href="#">中文</a>
+					&nbsp;<a>|</a>&nbsp;
+					<a href="#" style="margin-right: 58px;">ENGLISH</a>&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="header_nav">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="html/lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="html/serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="html/zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="html/fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="html/gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="header_logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+		<div class="banner"></div>
+		<div class="ss">
+			<div class="banner_l">
+				<a href="#" style="margin-left: 40px;">首页</a>>
+				<a href="#">招标信息</a>>
+				<a href="#">招标公告</a>>工程招标
+				<div class="banner_r">
+					<input type="text" />
+					<button></button>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div class="main_bj">
+				<div class="bj1"></div>
+				<div class="bj2"></div>
+				<div class="bj3"></div>
+				<div class="bj4"></div>
+				<div class="bj5"></div>
+			</div>
+			<div class="main_centre">
+				<div class="centre_l">
+					<div class="centre_l_gg">
+						<a href="zhaobiao.html">招标公告/</a>
+					</div>
+					<div class="zb">
+						<a href="zhaobiao.html" class="zb_gc">
+							<span class="span">工程招标</span>
+							<i class="hui"></i>
+						</a>
+						<a href="caigou.html" class="zb_cg">
+							<span class="span">采购招标</span>
+							<i></i>
+						</a>
+					</div>
+					<div class="zb_tz">
+						<a href="tongzhi.html">招标通知/</a>
+					</div>
+				</div>
+				<div class="centre_r">
+					<div class="centre_r_title">采购招标</div>
+					<div class="centre_r_cont">
+						<p></p>
+						<table width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="tr1_td td1">项目编号</td>
+								<td class="tr1_td td1">项目名称</td>
+								<td class="tr1_td td1">报名截止时间</td>
+								<td class="tr1_td td1">联系人</td>
+								<td class="tr1_td">操作</td>
+							</tr>
+							<tr ng-repeat="obj in data">
+								<td class="tr2_td td2">{{obj.td1}}</td>
+								<td class="tr2_td td2">{{obj.td2}}</td>
+								<td class="tr2_td td2">{{obj.td3}}</td>
+								<td class="tr2_td td2">{{obj.td4}}</td>
+								<td class="td2">
+									<a class="td2_a1" href="#">{{obj.a1}}</a>{{obj.a2}}
+								</td>
+							</tr>
+							
+						</table>
+						<div class="centre_r_page">
+							<a class="page_pre"><</a>
+							<a href="#">1</a>
+							<a class="page_next">></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="bottom">
+			<div class="bottom_cont">
+				<a class="bottom_loge" href="#"></a>
+				<div class="cont_id">
+					深圳市南山区科研路16号15楼<br />
+					86-755-6682 6666<br />
+					股票代码：834793
+				</div>
+				<div class="ewm_hq">
+					<img src="img/weixin_huaqiang.jpg" />
+					华强方特官方微信
+				</div>
+				<div class="ewm_ly">
+					<img src="img/weixin_leyou.jpg" />
+					乐游方特官方微信
+				</div>
+				<div class="ewm_ft">
+					<img src="img/weixin_xiongchumo.jpg" />
+					方特熊出没官方微信
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer_box">
+				<div class="footer_lj">
+					<a href="#">关于华强方特</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">主营业务</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">华强方特热讯</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">方特旅游</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">方特动漫</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">网站地图</a><br />
+					版权所有：华强方特（深圳）智能技术有限公司 © 2005-2030 All rights reserved <br />
+					<a href="#" class="zz">《增值电信业务经营许可证》</a>许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7
+				</div>
+				<a href="#" class="footer_a1">
+					<img src="img/police0.gif" />
+				</a>
+				<a href="#" class="footer_a2">
+					<img src="img/gameRFID.png" />
+				</a>
+				<a href="#" class="footer_a3">
+					<img src="img/police00.gif" />
+				</a>
+				<a href="#" class="footer_a4">
+					<img src="img/gswj.png" />
+				</a>
+				
+			</div>
+		</footer>
+	</body>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/fangte.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route1.4.5.js"></script>
+	<script>
+		angular.module("app",[]).controller("myCtrl",function($scope,$http){
+			$http.get("data/caigou.json").success(function(obj){
+				console.log(obj);
+				$scope.data=obj.info;
+				console.log($scope.data);
+			})
+			setTimeout(function(){
+				var a = 600+"px";//设置进入第二个页面的导航栏进度
+
+				//设置导航栏hover效果显示
+				$(".header_nav>ul>li").hover(function(){
+					var ind = $(this).index()*150+"px";
+					$(this).parent().css({"background-position-x":ind})
+				},function(){
+					$(this).parent().css({"background-position-x":a})
+				})
+				
+				//设置导航栏点击后的效果以及它的显示位置
+				$(".header_nav>ul>li").click(function(){
+					a = $(this).index()*150+"px";
+					$(this).parent().css({"background-position-x":a})
+				})
+			})
+		})
+	</script>
+</html>

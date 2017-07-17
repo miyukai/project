@@ -1,0 +1,410 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "microsoft yahei";
+    background: #960678;
+}
+.box {
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1920px;
+    overflow: hidden;
+    height: 100%;
+    //  position: relative;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slider,
+.slider-item {
+    width: 100%;
+    height: 100%;
+}
+.slider-item {
+    width: 100%;
+    animation-duration: 20s;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    background-size: 100% auto;
+}
+.slider-item1 {
+    background: url("../img/banner3.jpg") no-repeat;
+    animation-delay: -1s;
+    opacity: 1;
+}
+.slider-item2 {
+    background: url("../img/banner7.jpg") no-repeat;
+    animation-delay: 3s;
+    opacity: 0;
+}
+.slider-item3 {
+    background: url("../img/banner4.jpg") no-repeat;
+    animation-delay: 7s;
+    opacity: 0;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        z-index: 2;
+    }
+    5% {
+        opacity: 0.8;
+        z-index: 1;
+    }
+    20% {
+        opacity: 1;
+        z-index: 1;
+    }
+    25% {
+        opacity: 0.8;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+.top {
+    margin-top: 30px;
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1920px;
+    height: 150px;
+    padding: 0 190px;
+    display: flex;
+    -webkit-justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    li {
+        -webkit-flex-grow: 1;
+        a {
+            width: 100%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &:first-child > .add > li:hover a {
+            background: #81B93F;
+            color: white;
+        }
+        &:nth-child(2) > .add > li:hover a {
+            background: #ED00DE;
+            color: white;
+        }
+        &:nth-child(3) > .add > li:hover a {
+            background: #F2710F;
+            color: white;
+        }
+        &:nth-child(4) > .add > li:hover a {
+            background: #00E6BF;
+            color: white;
+        }
+        ul {
+            width: 80%;
+            margin-left: 10%;
+            display: none;
+            z-index: 30;
+            li {
+                background-size: 100% 100%;
+                width: 100%;
+                height: 45px;
+                transform: rotateX(-30deg);
+                text-align: center;
+                line-height: 45px;
+                padding-bottom: 5px;
+                a {
+                    display: block;
+                    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+                    width: 100%;
+                    background: white;
+                    color: #303030;
+                }
+                img {
+                    height: 7px;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.left_hqft {
+    position: absolute;
+    width: 310px;
+    height: 300px;
+    left: 20px;
+    bottom: 150px;
+    background: url("../img/ggbg.png") no-repeat 0 0;
+    z-index: 11;
+    animation-name: top_down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    h3 {
+        color: white;
+        text-align: center;
+        line-height: 70px;
+    }
+    p:first-of-type {
+        padding: 20px;
+        text-indent: 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    p:last-of-type {
+        text-align: center;
+        padding: 20px;
+        color: #FD7A39;
+        background: url("../img/gupiaodm.png") no-repeat 0 0;
+        background-size: 100% 100%;
+    }
+    & > .right {
+        display: block;
+        float: right;
+        color: #FEA56D;
+        position: absolute;
+        right: 35px;
+        bottom: 70px;
+        font-size: 32px;
+        animation-name: left_right;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    & > .cuo {
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 32px;
+    }
+}
+//华强方特动画
+@keyframes top_down {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(5px);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+//左右移动
+@keyframes left_right {
+    0% {
+        right: 35px;
+        opacity: 0;
+    }
+    50% {
+        right: 30px;
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+        right: 18px;
+    }
+}
+.bottom {
+    width: 100%;
+    height: 261px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background: url("../img/bott.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 10;
+    & > .left {
+        width: 15%;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-around;
+        & > div:first-child {
+            -webkit-flex-grow: 1;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url("../img/logo_dm.png") no-repeat 0 0;
+                background-size: auto;
+            }
+        }
+        & > div:last-child {
+            -webkit-flex-grow: 1;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url("../img/logobmm.png") no-repeat 0 0;
+                background: auto;
+            }
+        }
+    }
+    & > .center {
+        width: 55%;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+        ul {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 5px;
+            display: flex;
+            li {
+                -webkit-flex-grow: 1;
+                a {
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+        p {
+            margin-bottom: 5px;
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+    & > .right {
+        width: 15%;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        li {
+            -webkit-flex-grow: 1;
+            text-align: center;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                img {
+                    display: inline-block;
+                    width: 35px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+.Right {
+    width: 60px;
+    border: 1px solid #8D0671;
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 12;
+    border-right: none;
+    background-color: #F1F1F1;
+    transition: all .8s;
+    & > a {
+        display: block;
+        width: 58px;
+        height: 57px;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+        & > i {
+            display: block;
+            width: 42px;
+            height: 48px;
+            margin: 0 0 0 14px;
+        }
+        & > img {
+            position: absolute;
+            left: -200px;
+            top: 0;
+            width: 0px;
+            opacity: 0;
+        }
+    }
+    .f1 {
+        background: url("../img/shouyeimg3.png") no-repeat -27px -48px;
+    }
+    .ft:hover i {
+        background-position-y: 0;
+        transition: all .8s;
+    }
+    .ft:hover img{
+        width: 200px;
+        opacity: 1;
+        transition: opacity .8s;
+    }
+    .f2 {
+        background: url("../img/shouyeimg3.png") no-repeat -83px -48px;
+    }
+    .tm:hover i{
+            background-position-y: 0;
+            transition: all .8s;
+    }
+    .tm:hover img{
+        width: 200px;
+        opacity: 1;
+        transition: opacity .8s;
+    }
+    .f3 {
+        background: url("../img/shouyeimg3.png") no-repeat -128px -48px;
+    }
+    .xcm:hover i{
+        background-position-y: 0px;
+        transition: all .8s;
+    }
+    .xcm:hover{
+            background-color: #960678;
+            transition: all .8s;
+    }
+    .xcm:hover img{
+        width: 200px;
+        opacity: 1;
+        transition: opacity .8s;
+    }
+}
+.shopping{
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    bottom: 85px;
+    left: 40%;
+    z-index: 11;
+    background: url(../img/gpa.png) no-repeat 0 0;
+}

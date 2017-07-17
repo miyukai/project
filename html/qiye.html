@@ -1,0 +1,149 @@
+		<div class="qiye" ng-controller="ctrl">
+			<div class="con_nav" ng-repeat="it in qiye.navqiye">
+				<a href="#">{{it.shou}}</a>&nbsp;>&nbsp;
+				<a href="#">{{it.guan}}</a>&nbsp;>&nbsp;
+				<span>{{it.si}}</span>
+			</div>
+			<div class="con1" ng-repeat="it in qiye.con1">
+				<img ng-src={{it.img1}} class="o_1" />
+				<img ng-src={{it.img2}} class="o_2" />
+				<div class="con1_con">
+					<div>
+						<h2>
+							{{it.conh2}}
+						</h2>
+						{{it.conh23}} 
+					</div>
+					<p>
+						{{it.p}}
+					</p>
+				</div>
+			</div>
+			<div class="con2" ng-repeat="it in qiye.con2">
+				<div>
+					<div>
+						<h3>{{it.h3}}</h3>
+						{{it.h32}}
+					</div>
+					<p>
+						{{it.p}}
+					</p>
+				</div>
+				<img ng-src={{it.img}}/>
+			</div>
+			<div class="con3" ng-repeat="it in qiye.con3">
+				<div class="con3_img">
+					<div class="con3_img1">
+						<div></div>
+						<a href="#">
+							<img ng-src={{it.img1}}/>
+							<div></div>
+						</a>
+					</div>
+					<div class="con3_img2">
+						<a href="#">
+							<img ng-src={{it.img2}}/>
+							<div></div>
+						</a>
+						<div>
+							<img ng-src={{it.img3}}/>
+							<img ng-src={{it.img4}}/>
+						</div>
+					</div>
+					<div class="con3_img3">
+						<a href="#" class="o32">
+							<img ng-src={{it.img5}}/>
+							<div></div>
+						</a>
+						<a href="#" class="o35">
+							<img ng-src={{it.img6}}/>
+							<div></div>
+						</a>
+					</div>
+				</div>
+				<p>
+					{{it.p}}
+				</p>
+			</div>
+			<div class="con4" ng-repeat="it in qiye.con4">
+				<div class="con4_h">
+					<h4>{{it.h4}}</h4>
+					{{it.h42}}
+				</div>
+				<p>
+					{{it.p}}
+				</p>
+				<a href="#" class="con4_img">
+					<img ng-src={{it.img1}}/>
+					<div>{{it.div1}}</div>
+					<span>
+						&ensp;&ensp;&ensp;&ensp;{{it.con1}}
+					</span>
+				</a>
+				<a href="#" class="con4_img">
+					<img ng-src={{it.img2}}/>
+					<div>{{it.div2}}</div>
+					<span>
+						&ensp;&ensp;&ensp;&ensp;{{it.con2}}
+					</span>
+				</a>
+				<a href="#" class="con4_img">
+					<img ng-src={{it.img3}}/>
+					<div>{{it.div3}}</div>
+					<span>
+						&ensp;&ensp;&ensp;&ensp;{{it.con3}}
+					</span>
+				</a>
+				<a href="#" class="con4_img">
+					<img ng-src={{it.img4}}/>
+					<div>{{it.div4}}</div>
+					<span>
+						&ensp;&ensp;&ensp;&ensp;{{it.con4}}
+					</span>
+				</a>
+				<a href="#" class="con4_img">
+					<img ng-src={{it.img5}}/>
+					<div>{{it.div5}}</div>
+					<span>
+						&ensp;&ensp;&ensp;&ensp;{{it.con5}}
+					</span>
+				</a>
+				<a href="#" class="con4_more">MORE>></a>
+			</div>
+			<div class="con5" ng-repeat="it in qiye.con5">
+				<div class="con5_left">
+					<img ng-src={{it.img1}} class="o5img1"/>
+					<img ng-src={{it.img2}} class="o5img2"/>
+					<img ng-src={{it.img3}} class="o5img3"/>
+				</div>
+				<div class="con5_right">
+					{{it.div}}
+				</div>
+				<a href="#" class="con4_more">MORE>></a>
+			</div>
+			<div class="con6" ng-repeat="it in qiye.con6">
+				<img ng-src={{it.img1}} class="o6img1"/>
+				<div class="con6_c">
+					<p>&nbsp;{{it.p1}}</p>
+					<p>{{it.p2}}</p>
+					<p>{{it.p3}}</p>
+				</div>
+				<a href="#" class="con4_more">MORE>></a>
+			</div>
+			<div class="con7" ng-repeat="it in qiye.con7">
+				<div>
+					<p>{{it.p1}}</p>
+					<p>{{it.p2}}</p>
+					<p>
+ 					    &ensp;&ensp;&ensp;&ensp;{{it.p3}}
+					</p>
+				</div>
+			</div>
+			<div class="con8" ng-repeat="it in qiye.con8">
+				<img ng-src={{it.img1}}/>
+				<div>
+					{{it.div1}} <br />
+      				&ensp;&ensp;{{it.div2}}
+				</div>
+			</div>
+		</div>

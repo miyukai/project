@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/huaqiangrexun.css"/>
+		<script src="../js/angular.min.js"></script>
+		<script src="../js/angular-route.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			article .cent{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			article .cent .up{
+				width: 900px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				color: #3E3E3E;
+			}
+			article .cent .up span{
+				padding: 10px 0px;
+				font-size: 13px;
+			}
+			article .cent .down{
+				margin: 20px 0px;
+			}
+			article .cent .down img{
+				width: 510px;
+				height: 320px;
+			}
+			article .center{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			article .center .up{
+				width: 900px;
+				display: flex;
+				flex-direction: column;
+				color: #3E3E3E;
+			}
+			article .center .up span{
+				padding: 10px 0px;
+				font-size: 18px;
+				color: #3E3E3E;
+				font-weight: bold;
+			}
+			article .center .up p{
+				text-indent: 25px;
+			}
+			article .center .down{
+				margin-top: 20px;
+				width: 600px;
+				margin-left: 200px;
+			}
+			article .center .down img{
+				width: 510px;
+				height: 320px;
+			}
+		</style>
+	</head>
+	<body ng-controller="ctrl">
+		<header>
+			<div class="header_t">
+				<span>深圳华强方特文化科技集团股份有限公司&nbsp;&nbsp;&nbsp;
+					<a href="#">中文</a>&nbsp;|&nbsp;
+					<a href="#">ENGLISH</a>&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="header_b">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="html/lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="html/serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="html/zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="html/fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="html/gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="h_logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+		<div class="banner"></div>
+	    <div class="banner_down wrap">
+	    	<p>首页>搜索</p>
+	    	<p><input type="text" /><img src="img/ss_btn.jpg" alt="" /></p>
+	    </div>
+	    
+	    
+	   <article>
+		   	<div class="cent">
+		   	    <div class="up">
+		   	    	<h1>6月16日《奔跑吧》方特专场 史上最欢乐综艺来袭</h1>
+		   	    	<span>来源：FANTAWILD      发布于：2017-06-13      浏览次数：45119</span>
+		   	    	<p> 6月16日,《奔跑吧》方特专场即将欢乐开跑。《奔跑吧》指定主题乐园——方特旅游区，将与跑男团强强联合，联手打造跑男史上最欢乐一期“方特专场”。</p>
+		   	    </div>
+		   	    <div class="down"><img src="img/ck1.jpg" alt="" /></div>
+		   </div>
+		   
+		    <div class="center" ng-repeat="obj in look">
+		   	    <div class="up">
+		   	    	<span>{{obj.span}}</span>
+		   	    	<p>{{obj.p}}</p>
+		   	    <div class="down"><img ng-src="{{obj.url}}" alt="" /></div>
+		   </div>
+		   <!--<div class="center">
+		   	    <div class="up">
+		   	    	<span>鲜肉云集！十二位明星阵容强大</span>
+		   	    	<p> 此次《奔跑吧》方特专场中，不仅人气女神AngelaBaby回归跑男家族，与迪丽热巴一起二美同框，还请到了实力派女演员林依晨作为嘉宾出场；而刚在《人民的名义》里饰演人气角色的张凯丽前辈也倾力加盟，粉丝们“吴老师！吴老师！”的热情呼唤不绝于耳。</p>
+		   	    <div class="down"><img src="img/201706130311085364.jpg" alt="" /></div>
+		   </div>
+		    <div class="center">
+		   	    <div class="up">
+		   	    	<p> 男嘉宾方面更是鲜肉云集，在《法医秦明》中饰演刑警队队长林涛的李现可谓颜值在线，另一位任嘉伦更是最近颇具名气的流量小生，他在《大唐荣耀》中饰演的广平王，凭借其英气逼人的外型、颇有谋略的胆识以及苏甜的声音，迅速圈了不少粉丝，随后在《跨界歌王》上也表现抢眼，唱功实力满满。此次《奔跑吧》方特专场中，任嘉伦搭档鹿晗同组任务，两人不仅颜值相当，比拼唱歌尬舞也是难辨高下，迷妹们可有眼福啦。</p>
+		   	    <div class="down"><img src="img/ck2.jpg" alt="" /></div>
+		   </div>
+		   <div class="center">
+		   	    <div class="up">
+		   	    	<span>萌宠抢镜！预告尽显新玩法</span>
+		   	    	<p>  本周方特专场已是《奔跑吧》此季的第十期，但跑男伐木累仍将节目玩得花样百出。
+ 预告片中惊现萌宠狗狗数只分外抢镜，更有迪丽热巴花容失色惊呼“这么大的狗！”在网友间掀起了热烈讨论“到底是热巴遛狗，还是热巴被狗遛”。
+ 继上一季跑男团在方特创新性地展开了一次“网络直播撕名牌”，这次《奔跑吧》方特专场的撕名牌游戏似乎也不一般。预告中，大黑牛李晨在撕名牌环节非常困惑，“为什么所有人都不害怕，我可是大黑牛啊”。难道说方特专场不仅仅是撕名牌这么简单，还有着其他隐藏任务？</p>
+		   	    <div class="down"><img src="img/ck3.jpg" alt="" /></div>
+		   </div>
+		   <div class="center">
+		   	    <div class="up">
+		   	    	<span>挑战极限！全新方特之旅即将开跑</span>
+		   	    	<p>  在上一季的《奔跑吧兄弟》方特专场中，跑男们与嘉宾们在方特东方神画开启了一场别开生面的“国学之旅”，体验了方特的《孟姜女》、《梨园游记》等特色室内主题项目。
+ 而在本次《奔跑吧》方特专场预告片中，多项国际顶尖室外惊险刺激项目一一登场：众多明星同款木质过山车《丛林飞龙》、建于60米高台之上的《太空梭》、世界顶级的无压肩式圆环过山车《暴风眼》等主题项目。如此惊险刺激的项目，不知道伐木累是否都一一挑战了？这将会是跑男们的“欢乐之旅”？还是“极限之旅”？敬请关注本周五晚《奔跑吧》方特专场。</p>
+		   	    <div class="down"><img src="img/ck4.jpg" alt="" /></div>
+		   </div>-->
+	   </article>
+		
+		
+		
+		<footer>
+			<div class="foot_top wrap">
+				<img src="img/logo_bottom.png" alt="" />
+				<div class="cent">
+					<img src="img/main_6_content_bg.png" alt="" />
+				    <p>
+				    <span>深圳市南山区科研路16号15楼</span><br/>
+				    <span>86-755-6682- 6666</span><br/>
+				    <span>股票代码：834793</span>
+				    </p>
+				</div>
+				<div class="right">
+					<div><img src="img/weixin_huaqiang.jpg" alt="" /><p>华强方特官方微信</p></div>
+					<div><img src="img/weixin_leyou.jpg" alt="" /><p>乐游方特官方微信</p></div>
+					<div><img src="img/weixin_xiongchumo.jpg" alt="" /><p>方特熊出没官方微信</p></div>
+				</div>
+			</div>
+			<img src="img/main_6_border.jpg" alt="" />
+			<div class="foot_down wrap">
+				<div class="zuo">
+					<ul>
+						<li>关于华强方特&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>联系我们&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>主营业务&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>华强方特热讯&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>方特旅游&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>方特动漫&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>网站地图</li>
+					</ul>
+					<p>版权所有：华强方特（深圳）智能技术有限公司 © 2005-2030 All rights reserved </p>
+				    <p>《增值电信业务经营许可证》 许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7</p>
+				</div>
+				<div class="you">
+					<p>
+						<img src="img/gameRFID.png" alt="" />
+						<img src="img/police00.gif" alt="" />
+						<img src="img/police0.gif" alt="" />
+						<img src="img/gswj.png" alt="" />
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	
+	
+	
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/fangte.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	//导航栏的滑动效果
+		$(".header_cent>ul>li").hover(function(){
+			var ind = $(this).index()*450+"px";
+			$(this).parent().css({"background-position-x":ind})
+		},function(){
+			$(this).parent().css({"background-position-x":"450px"})
+		})
+		//nav的点击改变效果
+		$("nav a").click(function(){
+			$(this).addClass("change")
+			$(this).siblings().removeClass("change")
+		})
+		//angular
+		var app=angular.module("app",["ngRoute"])
+        app.controller("ctrl",function($scope,$http){
+        	$http.get("../data/rexun.json").success(function(data){
+        		$scope.art1=data.art1;
+        		$scope.art2=data.art2;
+        		$scope.look=data.look;
+        	})
+        })
+		app.config(function($routeProvider){
+			$routeProvider
+			     .when("/yemian1",{
+			     	templateUrl:"temp/ym1.html"
+			     })
+			     .when("/yemian2",{
+			     	templateUrl:"temp/ym2.html"
+			     })
+		        .otherwise({
+			      	redirectTo:"/yemian1"
+			    })
+		})
+	</script>
+</html>

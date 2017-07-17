@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+input, a, button {
+  outline: none; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  min-width: 1280px;
+  position: absolute;
+  z-index: 10; }
+  header .header_t {
+    padding: 5px;
+    height: 30px;
+    font-size: 14px;
+    background: url(../img/top_bg.jpg);
+    position: relative; }
+    header .header_t span {
+      float: right;
+      color: #fff;
+      margin-right: 20px; }
+    header .header_t a {
+      color: #719DCB; }
+      header .header_t a:hover {
+        color: #fff; }
+  header .header_b {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: solid 8px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: flex-end; }
+    header .header_b a {
+      color: #000; }
+    header .header_b > ul {
+      display: flex;
+      margin-right: 30px;
+      height: 100px;
+      text-align: center;
+      background: url(../img/nav_on.png) no-repeat;
+      background-size: 150px 100px;
+      background-position-x: 300px;
+      transition: all 1s; }
+      header .header_b > ul > li {
+        width: 150px;
+        height: 100px;
+        line-height: 100px;
+        position: relative; }
+        header .header_b > ul > li:hover {
+          background: #F1C40F; }
+          header .header_b > ul > li:hover ul {
+            display: block; }
+        header .header_b > ul > li ul {
+          width: 100%;
+          position: absolute;
+          top: 100px;
+          background: #F1C40F;
+          display: none; }
+          header .header_b > ul > li ul li {
+            width: 100%;
+            height: 50px;
+            line-height: 50px; }
+            header .header_b > ul > li ul li:hover {
+              background: #E38A00; }
+              header .header_b > ul > li ul li:hover a {
+                color: #fff; }
+  header .h_logo {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    background: #fff; }
+    header .h_logo img {
+      width: 220px; }
+
+section {
+  background: #FAF4F4; }
+  section .banner {
+    width: 100%; }
+    section .banner .banner_box {
+      width: 1360px;
+      height: 520px;
+      background: url("../img/anime_banner.jpg") no-repeat center; }
+  section .seek {
+    width: 1284px;
+    height: 73px;
+    background: white;
+    margin: 0 auto 30px;
+    margin-top: -40px;
+    box-shadow: 3px 3px 3px #cccccc; }
+    section .seek span:nth-child(1) {
+      font-size: 14px;
+      color: #737171;
+      line-height: 73px;
+      padding-left: 2rem; }
+    section .seek span:nth-child(2) {
+      float: right;
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 50px; }
+      section .seek span:nth-child(2) input[type='text'] {
+        width: 212px;
+        height: 30px;
+        border: 1px solid #c0c0c0;
+        background: white;
+        display: inline-block;
+        float: left; }
+      section .seek span:nth-child(2) input[type='button'] {
+        width: 30px;
+        height: 32px;
+        background: #1c8eca;
+        border: 2px solid #1c8eca;
+        display: inline-block;
+        float: left;
+        background: url("../img/btn_bg.jpg") no-repeat center; }
+  section .nav {
+    width: 1280px;
+    margin: 0 auto; }
+    section .nav .nav_left {
+      width: 300px;
+      float: left; }
+      section .nav .nav_left p {
+        padding-right: 30px;
+        line-height: 73px;
+        background: url("../img/dot.png") no-repeat;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600; }
+      section .nav .nav_left ul {
+        width: 256px;
+        background: #f5f8fd; }
+        section .nav .nav_left ul li {
+          text-align: center;
+          height: 50px;
+          padding: 10px 0 0px 50px;
+          position: relative; }
+          section .nav .nav_left ul li em {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url("../img/dot.png") no-repeat;
+            background-position: 0 -105px;
+            float: left;
+            margin: 15px; }
+          section .nav .nav_left ul li a {
+            font-size: 24px;
+            color: #707070;
+            font-weight: 700;
+            float: left;
+            line-height: 50px; }
+          section .nav .nav_left ul li .nav2 {
+            z-index: 30;
+            background: #f5f8fd;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 255px;
+            display: none; }
+            section .nav .nav_left ul li .nav2 li {
+              text-align: left;
+              height: 30px;
+              line-height: 30px;
+              padding: 10px 0 0 10px; }
+            section .nav .nav_left ul li .nav2 li:hover {
+              color: #3091dc; }
+        section .nav .nav_left ul .nav_active em {
+          background-position: 0 -82px; }
+        section .nav .nav_left ul .nav_active a {
+          color: #1990db; }
+        section .nav .nav_left ul li:hover em {
+          background-position: 0 -82px;
+          transition: 0.3s; }
+        section .nav .nav_left ul li:hover a {
+          color: #1990db; }
+        section .nav .nav_left ul li:hover .nav2 {
+          display: block; }
+    section .nav .nav_right {
+      width: 915px;
+      float: left;
+      padding-left: 30px;
+      position: relative; }
+      section .nav .nav_right p {
+        font-size: 25px;
+        color: #fd8821;
+        font-weight: 500;
+        padding-right: 0px;
+        line-height: 3;
+        width: 250px;
+        background: url("../img/dashed-yellow.png") no-repeat bottom left; }
+      section .nav .nav_right #nav_txt {
+        height: 200px;
+        font-size: 16px;
+        color: #5e4a4a;
+        line-height: 1.8;
+        margin-top: 30px; }
+        section .nav .nav_right #nav_txt span {
+          display: block;
+          line-height: 1.6; }
+        section .nav .nav_right #nav_txt span:first-child {
+          text-indent: 2em; }
+      section .nav .nav_right img {
+        position: absolute;
+        right: -35px;
+        top: 115px; }
+    section .nav .clean {
+      clear: both; }
+    section .nav .nav_bottom {
+      height: 250px;
+      width: 1280px;
+      background: #f1f1f1;
+      margin-top: 50px; }
+      section .nav .nav_bottom p {
+        padding: 40px 0 0 20px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #4a4a4a; }
+        section .nav .nav_bottom p span {
+          display: block; }
+        section .nav .nav_bottom p span:first-child {
+          text-indent: 2em; }
+  section .anim {
+    width: 100%;
+    padding-top: 750px;
+    background: url("../img/anim_bg.jpg") #F8F8F8 no-repeat top center; }
+    section .anim .anim_txt {
+      width: 1280px;
+      display: block;
+      margin: 0px auto 50px;
+      line-height: 2; }
+      section .anim .anim_txt p {
+        text-indent: 2rem; }
+  section .brand {
+    width: 100%;
+    background: url("../img/brand_bg.jpg") no-repeat top center;
+    padding-top: 230px; }
+    section .brand .brand_cen {
+      width: 1280px;
+      margin: 0 auto; }
+      section .brand .brand_cen .clear {
+        clear: both; }
+      section .brand .brand_cen .brand_box {
+        width: 50%;
+        height: 310px;
+        display: inline-block;
+        float: left;
+        margin-bottom: 20px;
+        position: relative; }
+        section .brand .brand_cen .brand_box .brand_txt {
+          width: 500px;
+          height: 276px;
+          background: yellowgreen;
+          margin-top: 30px;
+          padding: 30px 140px 0 30px;
+          color: #4a4a4a;
+          font-size: 14px;
+          line-height: 2em;
+          text-indent: 2em; }
+        section .brand .brand_cen .brand_box .brand_header {
+          width: 310px;
+          height: 50px;
+          color: #fff;
+          font-size: 26px;
+          line-height: 50px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin-left: 30px;
+          text-align: center; }
+        section .brand .brand_cen .brand_box .brand_img {
+          width: 232px;
+          height: 247px;
+          overflow: hidden;
+          position: absolute;
+          left: 370px;
+          top: 45px; }
+          section .brand .brand_cen .brand_box .brand_img img {
+            height: 247px; }
+      section .brand .brand_cen .brand_box:nth-child(1) .brand_txt {
+        background: #F0EAF4; }
+      section .brand .brand_cen .brand_box:nth-child(1) .brand_header {
+        background: #AA2596; }
+      section .brand .brand_cen .brand_box:nth-child(2) .brand_txt {
+        background: #F9F0CD; }
+      section .brand .brand_cen .brand_box:nth-child(2) .brand_header {
+        background: #F7970B; }
+      section .brand .brand_cen .brand_box:nth-child(3) .brand_txt {
+        background: #DCECF4; }
+      section .brand .brand_cen .brand_box:nth-child(3) .brand_header {
+        background: #3091DC; }
+      section .brand .brand_cen .brand_box:nth-child(4) .brand_txt {
+        background: #E4F7CE; }
+      section .brand .brand_cen .brand_box:nth-child(4) .brand_header {
+        background: #92C259; }
+      section .brand .brand_cen .brand_box:hover .brand_img {
+        height: 276px;
+        width: 260px;
+        top: 30px; }
+        section .brand .brand_cen .brand_box:hover .brand_img img {
+          height: 276px;
+          transition: 0.3s; }
+  section .brand2 {
+    width: 100%;
+    height: 780px;
+    background: url("../img/brand_bg2.jpg") no-repeat center; }
+    section .brand2 .brand2_cen {
+      width: 1280px;
+      height: 780px;
+      margin: 0 auto;
+      position: relative; }
+      section .brand2 .brand2_cen p {
+        text-indent: 2rem;
+        width: 176px;
+        font-size: 12px;
+        color: #000; }
+      section .brand2 .brand2_cen #brand2_one {
+        position: absolute;
+        top: 451px;
+        right: 543px; }
+      section .brand2 .brand2_cen #brand2_two {
+        position: absolute;
+        top: 451px;
+        right: 288px; }
+      section .brand2 .brand2_cen #brand2_three {
+        position: absolute;
+        top: 451px;
+        right: 30px; }
+  section .brand3 {
+    width: 100%;
+    height: 628px;
+    position: relative;
+    background: url("../img/brand_bg3.jpg") no-repeat center; }
+    section .brand3 .brand3_cen {
+      width: 1280px;
+      height: 628px;
+      margin: 0 auto; }
+      section .brand3 .brand3_cen input {
+        width: 205px;
+        height: 45px;
+        border-radius: 10px;
+        border: 2px solid #3091dc;
+        color: #3091dc;
+        line-height: 45px;
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        position: absolute;
+        right: 550px;
+        bottom: 120px; }
+
+footer {
+  border-right: 1px solid red;
+  width: 100%;
+  background: #f6f6f6; }
+  footer .foot {
+    width: 100%;
+    margin: 0 auto; }
+    footer .foot .foot_top {
+      width: 100%;
+      height: 253px;
+      margin: 0 auto;
+      background: url(../img/footer-bg.jpg) no-repeat center bottom #F6F6F6;
+      display: block;
+      overflow: hidden; }
+      footer .foot .foot_top .foot_top1280 {
+        width: 1280px;
+        height: 100%;
+        margin: 0 auto; }
+        footer .foot .foot_top .foot_top1280 a {
+          float: left;
+          height: 100%;
+          line-height: 253px;
+          margin-left: 90px; }
+        footer .foot .foot_top .foot_top1280 .foot_top1280_main {
+          background: url(../img/footer_bg2.png) no-repeat 0px 5px;
+          float: left;
+          margin-top: 55px;
+          margin-left: 90px;
+          width: 300px;
+          padding-left: 35px;
+          line-height: 30px; }
+        footer .foot .foot_top .foot_top1280 .foot_top1280_tu {
+          float: right;
+          width: 500px;
+          margin-top: 40px;
+          margin-right: 50px; }
+          footer .foot .foot_top .foot_top1280 .foot_top1280_tu a {
+            margin-left: 10px;
+            display: inline-block;
+            width: 154px;
+            height: 253px; }
+            footer .foot .foot_top .foot_top1280 .foot_top1280_tu a img {
+              display: block; }
+          footer .foot .foot_top .foot_top1280 .foot_top1280_tu a:last-child {
+            width: 154px;
+            height: 253px; }
+            footer .foot .foot_top .foot_top1280 .foot_top1280_tu a:last-child img {
+              width: 100%; }
+    footer .foot .foot_bottom {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      background: #ededed; }
+      footer .foot .foot_bottom .foot_bottom_box {
+        width: 1320px;
+        margin: 0 auto;
+        overflow: hidden; }
+        footer .foot .foot_bottom .foot_bottom_box .foot_bottom_left {
+          float: left;
+          width: 730px;
+          text-align: center;
+          font-size: 14px;
+          color: #666;
+          line-height: 30px;
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          margin-left: 140px; }
+          footer .foot .foot_bottom .foot_bottom_box .foot_bottom_left div {
+            margin: 0 auto;
+            display: inline-block; }
+            footer .foot .foot_bottom .foot_bottom_box .foot_bottom_left div a {
+              color: #666;
+              font-size: 14px; }
+            footer .foot .foot_bottom .foot_bottom_box .foot_bottom_left div span {
+              padding: 0 15px; }
+          footer .foot .foot_bottom .foot_bottom_box .foot_bottom_left p {
+            display: inline-block; }
+        footer .foot .foot_bottom .foot_bottom_box .foot_bottom_right {
+          width: 320px;
+          float: right;
+          margin-right: 80px;
+          margin-top: 20px; }
+          footer .foot .foot_bottom .foot_bottom_box .foot_bottom_right a {
+            float: left;
+            margin-right: 20px;
+            width: 60px;
+            height: 60px; }
+            footer .foot .foot_bottom .foot_bottom_box .foot_bottom_right a img {
+              width: 100%; }
+          footer .foot .foot_bottom .foot_bottom_box .foot_bottom_right a:nth-child(2) img {
+            width: 60%; }
+          footer .foot .foot_bottom .foot_bottom_box .foot_bottom_right a:nth-child(4) img {
+            width: 80%; }
+
+/*# sourceMappingURL=anime.css.map */

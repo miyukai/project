@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/huaqiangrexun.css"/>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.js"></script>
+	</head>
+	<body ng-controller="ctrl">
+		<header>
+			<div class="header_t">
+				<span>深圳华强方特文化科技集团股份有限公司&nbsp;&nbsp;&nbsp;
+					<a href="#">中文</a>&nbsp;|&nbsp;
+					<a href="#">ENGLISH</a>&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="header_b">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="html/lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="html/serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="html/zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="html/fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="html/gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="h_logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+		<div class="banner"></div>
+	    <div class="banner_down wrap">
+	    	<p>首页>搜索</p>
+	    	<p><input type="text" /><img src="img/ss_btn.jpg" alt="" /></p>
+	    </div>
+	    <aside class="wrap">
+	    	<div class="left"><p>HOT</p></div>
+	    	<div class="right">
+	    		<h1>6月16日《奔跑吧》方特专场 史上最欢乐综艺来袭</h1>
+	    		<span>/2017-06-13</span>
+	    		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6月16日,《奔跑吧》方特专场即将欢乐开跑。《奔跑吧》指定主题乐园——方特旅游区，将与跑男团强强联合，联手打造跑男史上最欢乐一期“方特专场”。鲜肉云集！十二位明星阵容强大此次《奔跑吧》方特专场中，不仅人气女神AngelaBaby回归跑男家族，与迪丽热巴一起二美同框，还请到了实力派女演员林依晨作为嘉宾出场；而刚在《人民的名义》里饰演人气角色的张凯丽前辈也倾力加盟，粉丝们“吴老师！吴老师！”的热情呼唤不绝于耳。男嘉宾方面更是鲜肉云集，在《法医秦明》中饰演刑警队队长林涛的李现可谓颜值在线，另一位任嘉伦更是最近颇具名气的流量小生，他在《大唐荣耀》中饰演的广平王，凭借其英气逼人的外型、颇有谋略的胆识以及苏甜的声音，迅速圈了不少粉丝，随后在《跨界歌王》上也表现抢眼，唱功实力满满。此次《奔跑吧》方特专场中，任嘉伦搭档鹿..</p>
+	    	    <a href="temp/look.html">查看更多 > > </a>
+	    	</div>
+	    </aside>
+		<nav class="wrap">
+			<p>
+				<a href="#yemian1" class="change">华强方特热讯</a>
+				<a href="#yemian2">媒体聚焦</a>
+			</p>
+		</nav>
+		
+		<ng-view></ng-view>
+		
+		
+		<footer>
+			<div class="foot_top wrap">
+				<img src="img/logo_bottom.png" alt="" />
+				<div class="cent">
+					<img src="img/main_6_content_bg.png" alt="" />
+				    <p>
+				    <span>深圳市南山区科研路16号15楼</span><br/>
+				    <span>86-755-6682- 6666</span><br/>
+				    <span>股票代码：834793</span>
+				    </p>
+				</div>
+				<div class="right">
+					<div><img src="img/weixin_huaqiang.jpg" alt="" /><p>华强方特官方微信</p></div>
+					<div><img src="img/weixin_leyou.jpg" alt="" /><p>乐游方特官方微信</p></div>
+					<div><img src="img/weixin_xiongchumo.jpg" alt="" /><p>方特熊出没官方微信</p></div>
+				</div>
+			</div>
+			<img src="img/main_6_border.jpg" alt="" />
+			<div class="foot_down wrap">
+				<div class="zuo">
+					<ul>
+						<li>关于华强方特&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>联系我们&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>主营业务&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>华强方特热讯&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>方特旅游&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>方特动漫&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li>网站地图</li>
+					</ul>
+					<p>版权所有：华强方特（深圳）智能技术有限公司 © 2005-2030 All rights reserved </p>
+				    <p>《增值电信业务经营许可证》 许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7</p>
+				</div>
+				<div class="you">
+					<p>
+						<img src="img/gameRFID.png" alt="" />
+						<img src="img/police00.gif" alt="" />
+						<img src="img/police0.gif" alt="" />
+						<img src="img/gswj.png" alt="" />
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	
+	
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/fangte.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	
+		
+var a = 450+"px";//设置进入第二个页面的导航栏进度
+
+//设置导航栏hover效果显示
+$(".header_b>ul>li").hover(function(){
+	var ind = $(this).index()*150+"px";
+	$(this).parent().css({"background-position-x":ind})
+},function(){
+	$(this).parent().css({"background-position-x":a})
+})
+
+//设置导航栏点击后的效果以及它的显示位置
+$(".header_b>ul>li").click(function(){
+	a = $(this).index()*150+"px";
+	$(this).parent().css({"background-position-x":a})
+})
+		
+		//nav的点击改变效果
+		$("nav a").click(function(){
+			$(this).addClass("change")
+			$(this).siblings().removeClass("change")
+		})
+		//angular
+		var app=angular.module("app",["ngRoute"])
+//		app.controller("ctrl",function($scope,$http){
+//			$http.get("data/data.json").success(function(data){
+//					$scope.atr1=data.art1													
+//				})
+//		})
+        app.controller("ctrl",function($scope,$http){
+        	$http.get("data/rexun.json").success(function(data){
+        		$scope.art1=data.art1;
+        		$scope.art2=data.art2;
+        	})
+        })
+		app.config(function($routeProvider){
+			$routeProvider
+			     .when("/yemian1",{
+			     	templateUrl:"temp/ym1.html"
+			     })
+			     .when("/yemian2",{
+			     	templateUrl:"temp/ym2.html"
+			     })
+		        .otherwise({
+			      	redirectTo:"/yemian1"
+			    })
+		})
+	</script>
+</html>

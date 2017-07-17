@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<style type="text/css">
+			ul{
+				width: 1200px;
+				display: flex;
+			}
+			li{
+				width: 150px;
+				flex-grow: 1;
+				list-style: none;
+				transition: all 1s;
+			}
+			li img{
+				width: 100%;
+			}
+			li:hover{
+				width: 300px;
+			}
+		</style>-->
+		<link rel="stylesheet" type="text/css" href="css/fangte.css"/>
+	</head>
+	<body ng-controller="ctrl">
+		<!--<ul>
+			<li><img src="img/o3img4.jpg"/></li>
+			<li><img src="img/o4_img1.jpg"/></li>
+			<li><img src="img/o4_img2.jpg"/></li>
+			<li><img src="img/o4_img3.jpg"/></li>
+			<li><img src="img/o4_img4.jpg"/></li>
+			<li><img src="img/o4_img5.jpg"/></li>
+		</ul>-->
+		<header>
+			<div class="header_t">
+				<span>深圳华强方特文化科技集团股份有限公司&nbsp;&nbsp;&nbsp;
+					<a href="#">中文</a>&nbsp;|&nbsp;
+					<a href="#">ENGLISH</a>&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="header_b">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="html/lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="html/serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="html/zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="html/fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="html/gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="h_logo">
+				<img src="img/logo.png"/>
+			</div>
+		</header>
+	</body>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/fangte.js"></script>
+	<script type="text/javascript">
+//		var a = `
+//		asdasd
+//		`;
+//		console.log(a)
+		$(".guanyu li").click(function(){
+			var a = $(this).index()
+			console.log(document.URL)
+			console.log(a)
+			window.location.href = "http://127.0.0.1:8020/mikai-fangte/index.html?"+a;
+		})
+		
+		
+	</script>
+</html>

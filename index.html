@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>方特首页</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body ng-controller="ctrl">
+		<!--头部-->
+		<div id="top">
+			<div class="top_font">
+				<span>{{language.company}}</span>&nbsp;&nbsp;
+				<a href="#">{{language.span1}}</a>
+				<span>|</span>
+				<a href="#">{{language.span2}}</a>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--logo-->
+		<div class="logo">
+			<img src="img/logo.png" />
+		</div>
+		<!--banner整体轮播开始-->
+		<header id="header">
+			<nav id="nav">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="html/lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="html/serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="html/zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="html/fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="html/gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="slider-container">
+				<ul class="slider">
+					<li>
+						<a href="#" class="slider-item slider-item1"></a>
+					</li>
+					<li>
+						<a href="#" class="slider-item slider-item2"></a>
+					</li>
+					<li>
+						<a href="#" class="slider-item slider-item3"></a>
+					</li>
+					<li>
+						<a href="#" class="slider-item slider-item4"></a>
+					</li>
+					<li>
+						<a href="#" class="slider-item slider-item5"></a>
+					</li>
+					<li>
+						<a href="#" class="slider-item slider-item6"></a>
+					</li>
+					<li>
+						<a href="#" class="slider-item slider-item7"></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--轮播结束-->
+		<!--主内容区开始-->
+		<div class="content">
+			<!--方特旅游和方特动漫开始-->
+			<div class="con_top">
+				<!--左-->
+				<a href="dongman.html">
+					<div class="con_top_leftImg">
+						<img ng-src={{img[0].src}} />
+					</div>
+					<div class="con_top_leftTitle">
+
+					</div>
+					<div class="con_top_leftButton">
+
+					</div>
+				</a>
+				<!--右-->
+				<a href="dm.html">
+					<div class="con_top_rightImg">
+						<img ng-src={{img[1].src}} />
+					</div>
+					<div class="con_top_rightTitle">
+
+					</div>
+					<div class="con_top_rightButton">
+
+					</div>
+				</a>
+			</div>
+			<!--方特旅游和方特动漫结束-->
+			<!--华强方特热讯开始-->
+			<div class="hotArguments">
+				<div class="hot_top"></div>
+				<div class="hot_content">
+					<div class="hot_left">
+						<ul>
+							<li ng-repeat="i in hotFont">
+								<a href="rexun.html">
+									<div class="hot_left_date">
+										<span>{{i.span}}</span>
+										<b>{{i.b}}</b> {{i.date}}
+									</div>
+									<div class="hot_left_font">
+										<h4>{{i.h4}}</h4>
+										<p>{{i.p}}</p>
+									</div>
+								</a>
+							</li>
+							<!--<li>
+								<a href="#">
+									<div class="hot_left_date">
+										<span>07</span>
+										<b>07</b> 2017-06
+									</div>
+									<div class="hot_left_font">
+										<h4>爱奇艺《楚乔传》首播  方特特意压屏吸睛</h4>
+										<p>6月5日,由赵丽颖、林更新、窦要、李沁领衔主演的电视剧《楚乔传》在爱奇艺正式上线，者都有主题乐园杠把子方特在爱奇艺特约播出的超强IP句，以极致权</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="hot_left_date">
+										<span>02</span>
+										<b>02</b> 2017-06
+									</div>
+									<div class="hot_left_font">
+										<h4>2016年全球了原报告发布  华强方特位居五强</h4>
+										<p>今日,全球主题娱乐行业权威机构AECOM&amp;TEA发布了最新的《2016全球主题公园和博物馆》报告。报告中显示，2016年亚洲市场表现依然强进，其中华</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="hot_left_date">
+										<span>27</span>
+										<b>27</b> 2017-05
+									</div>
+									<div class="hot_left_font">
+										<h4>端午游方特"粽"情享欢乐</h4>
+										<p>伴随浓浓粽香,端午节如期而至。特别的是,今年的端午节将于儿童团结上演一场"奇遇记"。当端午节遇上儿童节,当传统民俗碰撞欢乐童趣,方特旅游区双</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="hot_left_date">
+										<span>27</span>
+										<b>27</b> 2017-05
+									</div>
+									<div class="hot_left_font">
+										<h4>李源潮：精耕民族化特色  推动本土品牌全面发力</h4>
+										<p>5月19日，中共中央政治局委员、国家副主席李源潮在芜湖方特调研考察中国本土文化旅游品牌,他指出,旅游企业要精耕民族化特色,推动本土品牌全面发力,</p>
+									</div>
+								</a>
+							</li>-->
+						</ul>
+						<div class="hot_left_button">
+
+						</div>
+					</div>
+					<!--方特热议右边-->
+					<div class="hot_right">
+						<!--立方体-->
+						<div id="cude">
+							<div class="hot_right_square">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<div class="cycx">
+							<!--创-->
+							<div class="hot_right_chuang">
+								<p>创</p>
+								<div class="hot_right_chuang_ins">
+									Innovation
+								</div>
+								<div class="hot_right_chuang_bg"></div>
+							</div>
+							<!--研-->
+							<div class="hot_right_yan">
+								<p>研</p>
+								<div class="hot_right_yan_ins">
+									R&D
+								</div>
+								<div class="hot_right_yan_bg"></div>
+							</div>
+							<!--产-->
+							<div class="hot_right_chan">
+								<p>产</p>
+								<div class="hot_right_chan_ins">
+									Production
+								</div>
+								<div class="hot_right_chan_bg"></div>
+							</div>
+							<!--销-->
+							<div class="hot_right_xiao">
+								<p>销</p>
+								<div class="hot_right_xiao_ins">
+									Marketing
+								</div>
+								<div class="hot_right_xiao_bg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--华强方特热讯结束-->
+			<!--主营业务开始-->
+			<div class="main_yewu">
+				<div class="div_blue">
+
+				</div>
+				<div class="div_middle_2">
+
+				</div>
+				<div class="div_left1">
+
+				</div>
+				<div class="div_left2">
+
+				</div>
+				<div class="main_yewu_font">
+					<img src="img/main_3_title.png" />
+				</div>
+				<div class="main_yewu_pic">
+					<div class="main_yewu_left">
+						<img src="img/main_3_left_huanle.jpg"/>
+						<div class="kuai">
+							
+						</div>
+					</div>
+					<div class="main_yewu_right">
+						<a href="#">
+							<div class=" title title1"></div>
+							<div class="title1_1">
+
+							</div>
+						</a>
+						<a href="#">
+							<div class="title title2"></div>
+							<div class="title2_2">
+
+							</div>
+						</a>
+						<a href="#">
+							<div class="title title3"></div>
+							<div class="title3_3">
+
+							</div>
+						</a>
+						<a href="#">
+							<div class="title title4"></div>
+							<div class="title4_4">
+
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--主营业务结束-->
+			<!--文化内容产品及服务-->
+			<div class="serviceProduct">
+				<div class="service_font">
+					文化内容产品及服务
+				</div>
+
+				<div class="title_">
+					<div class="T">
+						<img src="img/main_4_bg.png" />
+					</div>
+					<a href="html/move.html">
+						<div class="service_title service_title1">
+							<img ng-src={{service[0].src}} />
+							<div>
+								<h3>{{service[0].h3}}</h3>
+								<p>{{service[0].p}}</p>
+							</div>
+						</div>
+					</a>
+					<a href="html/anime.html">
+						<div class="service_title service_title2">
+							<div>
+								<h3>{{service[1].h3}}</h3>
+								<p>{{service[1].p}}</p>
+							</div>
+							<img ng-src={{service[1].src}} />
+						</div>
+					</a>
+					<a href="html/theme.html">
+						<div class="service_title service_title3">
+							<img ng-src={{service[2].src}} />
+							<div>
+								<h3>{{service[2].h3}}</h3>
+								<p>{{service[2].p}}</p>
+							</div>
+						</div>
+					</a>
+					<a href="html/culture.html">
+						<div class="service_title service_title4">
+							<div>
+								<h3>{{service[3].h3}}</h3>
+								<p>{{service[3].p}}</p>
+							</div>
+							<img ng-src={{service[3].src}} />
+						</div>
+					</a>
+					<!--<a href="#">
+						<div class="service_title service_title2">
+							<div>
+								<h3>动漫产品</h3>
+								<p>华强方特黎族民族原创,积极从源远流长的中华文化中提取精华,融入原创动画作品中,并通过故事内容......
+								</p>
+							</div>
+							<img src="img/m4img2.png" />
+						</div>
+					</a>
+					<a href="#">
+						<div class="service_title service_title3">
+							<img src="img/m4img3.png" />
+							<div>
+								<h3>主题演艺</h3>
+								<p>华强方特借助在自动控制、人工智能、机械设备、应是特技等方面的有事切入演艺行业,打造国际顶级的祝体验机项目......</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="service_title service_title4">
+							<div>
+								<h3>文化衍生品</h3>
+								<p>华强方特依托成熟的多元化产业发展基础,将特种电影、数字动漫、主题演艺、文化科技主题乐园、文化衍生品等相关领域有机结合......</p>
+							</div>
+							<img src="img/m4img4.png" />
+						</div>
+					</a>-->
+				</div>
+			</div>
+			<!--文化内容产品及服务结束-->
+			<!--动画开始-->
+			<div class="animation">
+				<div>
+					<div>
+						<a href="#">
+							<img src="img/m5img1.jpg" />
+						</a>
+					</div>
+					<div>
+						<div>
+							<a href="#"><img src="img/m5img2.jpg" /></a>
+							<a href="#"><img src="img/m5img3.jpg" /></a>
+							<a href="#"><img src="img/m5img4.jpg" /></a>
+							<a href="#"><img src="img/m5img5.jpg" /></a>
+							<a href="#"><img src="img/m5img6.jpg" /></a>
+						</div>
+						<div>
+							<a href="#"><img src="img/m5img7.jpg" /></a>
+							<a href="#"><img src="img/m5img8.jpg" /></a>
+							<a href="#"><img src="img/m5img9.jpg" /></a>
+							<a href="#"><img src="img/m5img10.jpg" /></a>
+							<a href="#"><img src="img/m5img11.jpg" /></a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a href="#"><img src="img/m5img12.jpg" /></a>
+					<a href="#"><img src="img/m5img13.jpg" /></a>
+					<a href="#"><img src="img/m5img14.jpg" /></a>
+					<a href="#"><img src="img/m5img15.jpg" /></a>
+					<a href="#"><img src="img/m5img16.jpg" /></a>
+				</div>
+			</div>
+			<!--动画结束-->
+		</div>
+		<!--加入我们-->
+		<div class="join_us">
+			<img src="img/jionus.jpg" />
+			<div class="join_us_con">
+				<p>
+					千秋大业，人才为本。人才是我们最宝贵的财富，是维系公司长青的纽带，是我们的核心。华强方特坚持可持续发展的战略高度，优化人才资源配置，促进人才队伍健康成长，努力培养造就一支与现代企业管理相匹配的高素质人才队伍，以塑造“诚信、创新、协作、专注”的企业核心价值观为依托，实现“立足文化科技，创造欢乐梦想”企业使命，形成有效的宏观和微观人力资源开发和管理能力，与企业品牌、规模相适应，构建“新型学习型组织”，有效促进员工与企业共同发展.
+				</p>
+			</div>
+			<div class="join_us_button">
+			</div>
+			<img src="img/m5img0.jpg" />
+		</div>
+		<!--加入我们结束-->
+		<!--主内容区结束-->
+		<!--底部开始-->
+		<div class="bottom">
+			<div class="bottom_top">
+				<div class="bottom_left">
+					<img src="img/logo_bottom.png" />
+				</div>
+				<div class="bottom_middle">
+					<div class="bottom_middle_icon">
+						<img src="img/main_6_content_bg.png" />
+					</div>
+					<div class="bottom_middle_font">
+						<p>深圳市南山区科研路16号15楼</p>
+						<p>86-755-6682&ensp;6666</p>
+						<p>股票代码：834793</p>
+					</div>
+				</div>
+				<div class="bottom_right">
+					<div class="bottom_right_ewm ewm1">
+						<img src="img/weixin_huaqiang.jpg" />
+						<p>华强方特官方微信</p>
+					</div>
+					<div class="bottom_right_ewm ewm2">
+						<img src="img/weixin_leyou.jpg" />
+						<p>乐游方特官方微信</p>
+					</div>
+					<div class="bottom_right_ewm ewm3">
+						<img src="img/weixin_xiongchumo.jpg" />
+						<p>方特熊出没官方微信</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_top_line">
+
+			</div>
+			<div class="bottom_font">
+				<div>
+					<ul>
+						<li>
+							<a href="#">
+								关于华强方特
+							</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="#">
+								联系我们
+							</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							主营业务
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="#">
+								华强方特热讯
+							</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="#dongman">
+								方特旅游
+							</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="#">
+								方特动漫
+							</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="#">
+								网站地图
+							</a>
+						</li>
+					</ul>
+					<p>版权所有：华强方特(深圳)智能技术有限公司&copy;2005-2030 All rights reserved</p>
+					<p>《增值电信业务经营许可证》许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7</p>
+				</div>
+				<div>
+					<ul>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div class="returnTop">
+			<a href="#header">
+				<div>
+					
+				</div>
+			<p>返回</p>
+			</a>
+		</div>
+		<!--底部结束-->
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fangte.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

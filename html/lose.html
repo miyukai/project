@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/lose2.css">
+    <style></style>
+</head>
+<body ng-controller="myCtrl">
+		<header>
+			<div class="header_t">
+				<span>深圳华强方特文化科技集团股份有限公司
+					<a href="#">中文</a>|
+					<a href="#">ENGLISH</a>
+				</span>
+			</div>
+			<div class="header_b">
+				<ul>
+					<li>
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="guanyu">
+						<a href="../guanyu.html">关于华强方特</a>
+						<ul class="addUl">
+							<li>
+								<a href="#">企业概览</a>
+							</li>
+							<li>
+								<a href="#">核心理念</a>
+							</li>
+							<li>
+								<a href="#">思想体系</a>
+							</li>
+							<li>
+								<a href="#">品牌故事</a>
+							</li>
+							<li>
+								<a href="#">企业荣誉</a>
+							</li>
+							<li>
+								<a href="#">全国布局</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="lose.html">主营业务</a>
+						<ul class="addUl">
+							<li>
+								<a href="lose.html">文化科技主题乐园</a>
+							</li>
+							<li>
+								<a href="serve.html">文化内容产品及服务</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../rexun.html">华强方特热讯</a>
+						<ul class="addUl">
+							<li>
+								<a href="../rexun.html">华强方特热讯</a>
+							</li>
+							<li>
+								<a href="../rexun.html">媒体聚焦</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../zhaobiao.html">招标信息</a>
+						<ul class="addUl">
+							<li>
+								<a href="../zhaobiao.html">招标公告</a>
+							</li>
+							<li>
+								<a href="../tongzhi.html">招标通知</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../linnian.html">加入我们</a>
+						<ul class="addUl">
+							<li>
+								<a href="../linnian.html">人才理念</a>
+							</li>
+							<li>
+								<a href="zhaoxiannashi.html">招贤纳士</a>
+							</li>
+							<li>
+								<a href="fazhan.html">培养发展</a>
+							</li>
+							<li>
+								<a href="gongzuohuanjing.html">人在华强方特</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="h_logo">
+				<img src="../img/logo.png"/>
+			</div>
+		</header>
+
+<section>
+    <div class="header_banner">
+        <div></div>
+    </div>
+
+    <div class="map">
+        <div id="map_box">
+            <div id="map_header"></div>
+            <div id="map_content">
+                <div id="map">
+                    <img ng-src={{map.map_img}} alt="">
+
+                    <div class="park_dian park_dian_crk" id="one">
+                        <b>重庆</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="two">
+                        <b>天津</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="three">
+                        <b>沈阳</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+
+                    <div class="park_dian " id="four">
+                        <b>大同</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="five">
+                        <b>嘉峪关</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="six">
+                        <b>青岛</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="seven">
+                        <b>济南</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="eight">
+                        <b>泰安</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="nine">
+                        <b>郑州</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="ten">
+                        <b>芜湖</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="eleven">
+                        <b>宁波</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="twelve">
+                        <b>厦门</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="thirteen">
+                        <b>汕头</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+                    <div class="park_dian " id="fourteen">
+                        <b>株洲</b>
+                        <div style="bottom: 0px"></div>
+                    </div>
+
+
+
+                    <!--  <div class="park_dian "  ng-repeat="txt in map.map_left_txt">
+                          <b >{{txt.location}}</b>
+                          <div style="bottom: 0px"></div>
+                      </div>-->
+                </div>
+                <div id="map_content_right">
+                    <p>覆盖全国各地</p>
+                    <p>Parks around China</p>
+                    <div class="loction_txt">
+                        <div class="loction1" ng-repeat="txt in map.map_txt">
+                            <span>{{txt.title}}</span>
+                            <p>{{txt.introduce}}</p>
+                        </div>
+                        <div id="map_right_top"></div>
+                        <div id="map_right_right"></div>
+                        <div id="map_right_bottom"></div>
+                        <div id="map_right_left"></div>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="introduce">
+        <div class="introduce_content">
+            <p>
+                华强方特文化科技集团在文化科技主题乐园的发展方面以自主创新为指导，将中华文化的核心内容与现代科技实施完美结合，独树一帜的创建出一批具有中国文化特色的文化科技主题乐园。
+            </p>
+            <p>
+                华强方特已在芜湖、青岛、株洲、沈阳、郑州、厦门、天津、宁波、大同等地投入运营"方特欢乐世界"、"方特梦幻王国"、"方特东方神画"、"方特水上乐园”四大品牌二十余个主题乐园，弘扬了中华民族精神和中国历史文化的主旋律，形成文化样板与示范效应，产生巨大社会效益，成为文化旅游支柱和特色文化旅游品牌；并将主题乐园输出到伊朗、乌克兰等国家，其中伊朗伊斯法罕"方特欢乐世界"于2014年8月开业，成为当地旅游热点，开创了中国文化科技主题乐园"走出去"先河。华强方特主题乐园的持续创新，获得业界与游客的大力追捧与称赞，已揽获2015年中国游乐行业首届“摩天奖”的十项大奖、2016年第二届届“摩天奖”的八项大奖，中国·芜湖方特旅游度假区荣获全球主题乐园游艺表演设备领域最具影响力及权威奖项2015
+                IAAPA"铜环奖"最佳数字营销活动奖。
+            </p>
+            <p>
+                华强方特还全力推动"美丽中国·文化产业示范园"项目，包含"华夏历史文明传承主题园"、"复兴之路爱国主义教育基地"、"明日中国主题园"三大主题园区，把中国灿烂的传统文化、光辉的革命历程、伟大的改革成就和美好的未来发展用全新的文化、科技、艺术手段展示，打造一个主题鲜明、气势恢宏、并为广大游客所喜闻乐见的文化科技体验示范区。2015年4月29日、2015年8月16日、2016年4月16日济南、芜湖、宁波方特东方神画隆重开业，崭新诠释民间传统艺术、集现代旅游和文化体验相结合的新型非物质文化遗产博览主题乐园。
+            </p>
+            <p>
+                此外，华强方特还正在按计划推进宁波、厦门、郑州、南宁等近十个在建主题乐园项目，未来几年，华强方特建成运营的主题乐园数量将达到40座。
+            </p>
+        </div>
+    </div>
+
+    <div class="word">
+        <div id="word_box">
+            <div class="word_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/lb1-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb1-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb1-3.jpg" alt=""></div>
+                    </div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="word_txt" ng-repeat="txt in word.txt">
+                <div class="word_title">
+                    <p>{{txt.txt1}}</p>
+                    <p>{{txt.txt2}}</p>
+                </div>
+                <input type="button" value="点击前往" class="btn1">
+                <img ng-src={{txt.img}} alt="" class="hover_img">
+                <input type="button" value="点击前往" class="hover_btn">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="king">
+        <div id="king_box">
+            <div class="king_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/lb2-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb2-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb2-3.jpg" alt=""></div>
+                    </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        <img src="../img/lb2-1.png" alt="" id="king_title">
+        <div class="king_txt" ng-repeat="txt in king.txt">
+            <div class="word_title">
+                <p>{{txt.txt1}}</p>
+            </div>
+            <input type="button" value="点击前往" class="btn1">
+            <img ng-src={{txt.img}} alt="" class="hover_img">
+            <input type="button" value="点击前往" class="hover_btn">
+        </div>
+        </div>
+    </div>
+
+    <div class="myth">
+        <div id="myth_box">
+            <div class="myth_banner">
+                <img src="../img/yellow.png" alt="" id="yellow">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/lb3-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb3-2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb3-3.png" alt=""></div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="myth_txt" ng-repeat="txt in myth.txt">
+                <div class="word_title">
+                    <p>{{txt.txt1}}</p>
+                </div>
+                <input type="button" value="点击前往" class="btn1">
+                <img ng-src={{txt.img}} alt="" class="hover_img">
+                <input type="button" value="点击前往" class="hover_btn">
+            </div>
+        </div>
+    </div>
+
+    <div class="paradise">
+        <div id="paradise_box">
+            <div class="paradise_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/lb4-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb4-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/lb4-3.jpg" alt=""></div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="paradise_txt" ng-repeat="txt in paradise.txt">
+                <div class="word_title">
+                    <p>{{txt.txt1}}</p>
+                </div>
+                <input type="button" value="点击前往" class="btn1">
+                <img ng-src={{txt.img}} alt="" class="hover_img">
+                <input type="button" value="点击前往" class="hover_btn">
+            </div>
+        </div>
+    </div>
+
+    <div class="buy">
+        <div id="buy_box">
+            <p id="buy_header"><img src="../img/buy.jpg" alt=""></p>
+            <div class="buy_content">
+                <div ng-repeat="img in buy.buy_content">
+                    <p>{{img.title}}</p>
+                    <img ng-src={{img.img}} alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="foot">
+        <div class="foot_top">
+            <div class="foot_top1280">
+                <a href="#"><img src="../img/logo2.png"/></a>
+                <div class="foot_top1280_main">
+                    深圳市南山区科研路16号15楼
+                    <br/>
+                    86-755-6682 6666
+                    <br/>
+                    股票代码：834793
+                </div>
+                <div class="foot_top1280_tu">
+                    <a href="#"><img src="../img/erweima3.jpg"/></a>
+                    <a href="#"><img src="../img/erweima4.jpg"/></a>
+                    <a href="#"><img src="../img/erweima5.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <div class="foot_bottom_box">
+                <div class="foot_bottom_left">
+                    <div>
+                        <a href="#">关于华强方特</a><span>|</span>
+                        <a href="#">联系我们</a><span>|</span>
+                        <a href="#">主营业务</a><span>|</span>
+                        <a href="#">华强方特热讯</a><span>|</span>
+                        <a href="#">方特旅游</a><span>|</span>
+                        <a href="#">方特动漫</a><span>|</span>
+                        <a href="#">网站地图</a>
+                    </div>
+
+                    <p>版权所有：华强方特（深圳）智能技术有限公司 © 2005-2030 All rights reserved</p>
+                    <p>《增值电信业务经营许可证》 许可证编号：粤B2-20090023 备案号：粤ICP备05131581号-7</p>
+                </div>
+                <div class="foot_bottom_right">
+                    <a href="#"><img src="../img/footer1.png"/></a>
+                    <a href="#"><img src="../img/footer2.gif"/></a>
+                    <a href="#"><img src="../img/footer3.gif"/></a>
+                    <a href="#"><img src="../img/footer4.png"/></a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+
+
+<script src="../js/angular.min.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/swiper-3.4.2.min.js"></script>
+<script src="../js/fangte.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+    //    轮播
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: 2000,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    })
+
+
+    //    地图hover效果
+    $(".park_dian").hover(function () {
+        var index = $(this).index()
+        $(".park_dian").removeClass("park_dian_crk")
+        $(this).addClass("park_dian_crk")
+        $("#map_right_top").addClass("top")
+        $("#map_right_right").addClass("right")
+        $("#map_right_bottom").addClass("bottom")
+        $("#map_right_left").addClass("left")
+
+        $(".loction_txt .loction1").css({display: "none"})
+        $(".loction_txt .loction1").eq(index - 1).css({display: "block"})
+//[className=loction1]
+    }, function () {
+        $("#map_right_top").removeClass("top")
+        $("#map_right_right").removeClass("right")
+        $("#map_right_bottom").removeClass("bottom")
+        $("#map_right_left").removeClass("left")
+    })
+
+
+    //      头部
+   var a = 300+"px";//设置进入第二个页面的导航栏进度
+
+//设置导航栏hover效果显示
+		$(".header_b>ul>li").hover(function(){
+			var ind = $(this).index()*150+"px";
+			$(this).parent().css({"background-position-x":ind})
+		},function(){
+			$(this).parent().css({"background-position-x":a})
+		})
+		
+		//设置导航栏点击后的效果以及它的显示位置
+		$(".header_b>ul>li").click(function(){
+			a = $(this).index()*150+"px";
+			$(this).parent().css({"background-position-x":a})
+		})
+
+    //    angular
+    var app = angular.module("app", [])
+    app.controller("myCtrl", function ($scope, $http) {
+        $scope.map = null;
+        $scope.word = null;
+        $scope.king = null;
+        $scope.myth = null;
+        $scope.paradise = null;
+        $scope.buy = null;
+        $http.get("../data/lose.json").success(function (data) {
+            $scope.map = data.lose.map;
+            $scope.word = data.lose.word;
+            $scope.king = data.lose.king;
+            $scope.myth = data.lose.myth;
+            $scope.paradise = data.lose.paradise;
+            $scope.buy = data.lose.buy;
+            console.log($scope.map);
+            console.log($scope.word);
+            console.log($scope.king);
+            console.log($scope.myth);
+            console.log($scope.paradise);
+            console.log($scope.buy);
+        })
+    })
+
+</script>
+
+
+
+</body>
+</html>
+<!--
+妮 削
+柠檬2+2
+柏
+芦荟柠檬茶1
+岳讲师
+森林玫果2
+伟  我
+玛丽莲1+2-->
